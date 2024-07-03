@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height:100vh;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    max-width:500px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading-title{
+ color: maroon;
+ margin-top: 50px;
+ margin-bottom: 30px;
+}
+#to-do-textbox{
+    height: 40px;
+    width: 200px;
+    border: none;
+    font-size: 12px;
+     padding: 20px;
+    /* text-align: center; */
+    cursor: pointer;
+    outline: none;
+
+}
+#add-btn{
+    width: 68px;
+    border: none;
+    background-color: maroon;
+    color:yellow;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    padding: 13px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+
+}
+
+#to-do-list li{
+    list-style: none;  
+    margin-top: 20px;
+    display: flex;
+    outline: none;
+    color:black;
+    width: 350px;
+    height: 30px;
+    font-size: 18px;
+    font-weight:bold;
+    animation: 0.3s ease-in-out;
+  animation-name:slideIn;
+  background-color: white;
+  background-image: linear;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 30px;
+ padding-left: 8px;
+  
+}
+
+@keyframes slideIn{
+    from{
+        opacity:0;
+        transform:rotatex(60deg) translatey(-10px);
+   }
+    to{
+    opacity: 1;
+    transform: rotate(0deg) translate(0px) ;
+   }
+}
+.fa-trash{
+    cursor: pointer;
+    margin: 2px;
+    background-color: #E2DFD2;
+    padding: 5px;
+    /* background-image: cover; */
+    border-radius: 4px;
+}
+
+
+
+
